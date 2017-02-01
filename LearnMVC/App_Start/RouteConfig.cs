@@ -19,7 +19,7 @@ namespace LearnMVC
 
             routes.MapRoute("Home", "home", new { controller = "Home", action = "Index" }, namespaces);
             routes.MapRoute("Login", "login", new { controller = "Login", action = "Index" });
-
+            routes.MapRoute("Logout", "logout", new { controller = "Login", action = "logout" }, namespaces);
 
             routes.MapRoute(
 
