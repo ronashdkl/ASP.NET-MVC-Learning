@@ -7,9 +7,9 @@ namespace LearnMVC.Controllers
 {
     public class LoginController : Controller
     {
-        public ActionResult Login ()
+        public ActionResult Index ()
         {
-            return Content("Login Page!");
+            return View();
         }
     }
 }

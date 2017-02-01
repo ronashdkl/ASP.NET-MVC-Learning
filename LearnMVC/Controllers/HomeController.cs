@@ -10,7 +10,7 @@ namespace LearnMVC.Controllers
         [HttpGet]
         public ActionResult index()
         {
-            return Content("Hello World!");
+            return View();
         }
 
     }

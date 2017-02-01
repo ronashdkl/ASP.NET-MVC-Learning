@@ -11,7 +11,7 @@ namespace LearnMVC.Areas.Admin.Controllers
         // GET: Admin/Home
         public ActionResult Index()
         {
-            return Content("Admin");
+            return View();
         }
     }
 }
