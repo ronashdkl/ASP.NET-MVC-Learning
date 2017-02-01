@@ -24,7 +24,7 @@
                     @if (User.Identity.IsAuthenticated)
                     {
                         <li><a href="#">Welcome @User.Identity.Name!</a></li>
-                        <li><a href="@Url.RouteUrl("home")">Visit Site</a></li>
+                        <li class="@(ViewBag.SelectedTab=="home"? "Active" : "")"><a href="@Url.RouteUrl("home")">Visit Site</a></li>
                         <li><a href="@Url.RouteUrl("logout")">Logout</a></li>
                       
                     }
