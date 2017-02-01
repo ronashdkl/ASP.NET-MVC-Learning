@@ -23,14 +23,16 @@
                 <ul class="nav navbar-nav">
                     @if (User.Identity.IsAuthenticated)
                     {
+
                         <li><a href="#">Welcome @User.Identity.Name</a></li>
-                        <li><a href="@Url.RouteUrl("logout")">Logout</a></li>
                         if (User.IsInRole("admin"))
                         {
-                          
-                            <li><a href="@Url.Action("index","home", new{ area="admin" })">Admin</a></li>
-                                
+
+                            <li><a href="@Url.Action("index","home", new{ area="admin" })">Admin Panel</a></li>
+
                         }
+                       
+                        <li><a href="@Url.RouteUrl("logout")">Logout</a></li>
                     }
                     else
                     {

@@ -6,7 +6,7 @@ obj
 [Db]ebug/
 [Rr]elease/
 *.obj
-*.pdb.
+*.pdb
 .vs
 Thumbs.db
 Desktop.ini
